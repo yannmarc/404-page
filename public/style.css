@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: "Space Mono", sans-serif;
+}
+
+/* Initializing my variables */
+
+:root {
+    --primary-color: #333333;
+    --secondary-color: #4F4F4F;
+    --ligh-color: #BDBDBD;
+    --neutral-color: #FFFFFF;
+}
+
+body {
+    font-size: 16px; 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a, a:visited {
+    color: inherit;
+}
+
+
+/* Stye guide */
+
+.hero-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: normal;
+
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    color: var(--primary-color);
+}
+
+.btn {
+    padding-block: 1.5rem;
+    padding-inline: 2.6875rem;
+    background-color: var(--primary-color);
+    color: var(--ligh-color);
+    margin-top: 4.125rem;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-mobile-gap {
+    gap: 1.875rem;
+}
+
+.center-item {
+    align-items: center;
+}
+
+.horizontal-align {
+    justify-content: center;
+}
+
+.m-paragraph {
+    margin-top: 1.875rem;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+}
+
+/* Main section */
+
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Wrapper section */
+
+.wrapper {
+    padding-inline: 1.4375rem;
+    width: 100%;
+}
+
+/* Image section */
+.wrapper article:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.img-container {
+    width: 286.83px;
+    height: 238px;
+    
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+footer p {
+    text-align: center;
+    color: var(--ligh-color)
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .img-container {
+        width: 409.22px;
+        height: 407.43px
+    }
+}
+
+@media (min-width: 1024px) {
+    .wrapper{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .img-container {
+        width: 539.22px;
+        height: 447.43px;
+    }
+
+    .hero-heading {
+        font-size: 4rem;
+        width: 586px;
+        line-height: 5.9375rem;
+    }
+
+    .m-paragraph {
+        width: 381px
+    }
+
+    .btn {
+        margin-top: 4rem;
+    }
+}
